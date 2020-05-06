@@ -3114,6 +3114,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bootstrap-social@npm:5.1.1":
+  version: 5.1.1
+  resolution: "bootstrap-social@npm:5.1.1"
+  dependencies:
+    bootstrap: ~3
+    font-awesome: ~4.7
+  checksum: 2/37bb13ee321d8de53021d3d8287313b2aeb9c117511e8cfe988960a60236b80213a592a8778f3b5091b00b079ab50e02a11f8753d919f568071d215ce1e16af5
+  languageName: node
+  linkType: hard
+
 "bootstrap@npm:4.0.0":
   version: 4.0.0
   resolution: "bootstrap@npm:4.0.0"
@@ -3121,6 +3131,13 @@ __metadata:
     jquery: 1.9.1 - 3
     popper.js: ^1.12.9
   checksum: 2/a00eedc4d20e4f41d9a07ff0151a675ef1d6d16e484d513feeba45a520ebbaf177e7a31c29a2b12bbbec5d3ac957cbefe9831782eda3857248f2707494218b54
+  languageName: node
+  linkType: hard
+
+"bootstrap@npm:~3":
+  version: 3.4.1
+  resolution: "bootstrap@npm:3.4.1"
+  checksum: 2/5c1f8e5fc8971ee7eb88573777efea999c79cae98fadb521959d5996a678cabf9415d349c3739c3c8c8bbf965ae48aae8480b61719c70dd41c1335ea68a9af2e
   languageName: node
   linkType: hard
 
@@ -3913,6 +3930,8 @@ __metadata:
     "@testing-library/react": ^9.3.2
     "@testing-library/user-event": ^7.1.2
     bootstrap: 4.0.0
+    bootstrap-social: 5.1.1
+    font-awesome: 4.7.0
     react: ^16.13.1
     react-dom: ^16.13.1
     react-popper: 0.9.2
@@ -5912,6 +5931,13 @@ __metadata:
   dependencies:
     debug: ^3.0.0
   checksum: 2/e8d884d0da932dcf64f8f45769f22cdb38a4ad7a889017e1221f4d306ed2dbfdc6c9ce2261dee82727fe5e0272a7b17761068fcff5709d34b453f0400414ea94
+  languageName: node
+  linkType: hard
+
+"font-awesome@npm:4.7.0, font-awesome@npm:~4.7":
+  version: 4.7.0
+  resolution: "font-awesome@npm:4.7.0"
+  checksum: 2/332215ef40b90cb33be5a8b571e99388050976b626b40d79dfdfa8387bbcecde67d4d7d14f66f4263481761e6498d9885723e4a1263380cf4968df8f720ad06d
   languageName: node
   linkType: hard
 

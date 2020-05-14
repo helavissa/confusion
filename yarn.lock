@@ -3935,9 +3935,11 @@ __metadata:
     react: ^16.13.1
     react-dom: ^16.13.1
     react-popper: 0.9.2
+    react-redux: 5.0.7
     react-router-dom: 4.2.2
     react-scripts: 3.4.1
     reactstrap: 5.0.0
+    redux: 3.7.2
   languageName: unknown
   linkType: soft
 
@@ -6992,7 +6994,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"invariant@npm:^2.2.2, invariant@npm:^2.2.4":
+"invariant@npm:^2.0.0, invariant@npm:^2.2.2, invariant@npm:^2.2.4":
   version: 2.2.4
   resolution: "invariant@npm:2.2.4"
   dependencies:
@@ -8453,6 +8455,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"lodash-es@npm:^4.17.5, lodash-es@npm:^4.2.1":
+  version: 4.17.15
+  resolution: "lodash-es@npm:4.17.15"
+  checksum: 2/ee2871b76deefd1754527e659a8c8b688f2e427e67b30709296878e18ad9cb54b4f0fc16a7161298156b4e0ebc2a37dfe501a3ea8725f195763f9de8a7ba6da6
+  languageName: node
+  linkType: hard
+
 "lodash._reinterpolate@npm:^3.0.0":
   version: 3.0.0
   resolution: "lodash._reinterpolate@npm:3.0.0"
@@ -8521,7 +8530,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"lodash@npm:>=3.5 <5, lodash@npm:^4.17.11, lodash@npm:^4.17.13, lodash@npm:^4.17.14, lodash@npm:^4.17.15, lodash@npm:^4.17.5":
+"lodash@npm:>=3.5 <5, lodash@npm:^4.17.11, lodash@npm:^4.17.13, lodash@npm:^4.17.14, lodash@npm:^4.17.15, lodash@npm:^4.17.5, lodash@npm:^4.2.1":
   version: 4.17.15
   resolution: "lodash@npm:4.17.15"
   checksum: 2/aec3fbb7570aa67bda500b8299b1b1821d60646bede87f76a74dfcc7666ab3445267d734ec71424d70809d52ad67a1356fab5ab694a3faa1908d68e9d48f00f5
@@ -11408,6 +11417,23 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"react-redux@npm:5.0.7":
+  version: 5.0.7
+  resolution: "react-redux@npm:5.0.7"
+  dependencies:
+    hoist-non-react-statics: ^2.5.0
+    invariant: ^2.0.0
+    lodash: ^4.17.5
+    lodash-es: ^4.17.5
+    loose-envify: ^1.1.0
+    prop-types: ^15.6.0
+  peerDependencies:
+    react: ^0.14.0 || ^15.0.0-0 || ^16.0.0-0
+    redux: ^2.0.0 || ^3.0.0 || ^4.0.0-0
+  checksum: 2/b4684fb67089f81c4bb2b7e7963d5748692e5109d6c150c32e8420b49d1278d8487f32311b5025a95878d580fc5a83660c249af270244f6df6380cfe00169d74
+  languageName: node
+  linkType: hard
+
 "react-router-dom@npm:4.2.2":
   version: 4.2.2
   resolution: "react-router-dom@npm:4.2.2"
@@ -11669,6 +11695,18 @@ fsevents@^1.2.7:
     indent-string: ^4.0.0
     strip-indent: ^3.0.0
   checksum: 2/78c8aa0a1076f47e0e198bfc8a9aa7d4ae3163c6951bd5de1015e47661bba62ea36573337bbeb4b309b48cc71954edbe43ae4aa3163db1996a781b757c5c47d7
+  languageName: node
+  linkType: hard
+
+"redux@npm:3.7.2":
+  version: 3.7.2
+  resolution: "redux@npm:3.7.2"
+  dependencies:
+    lodash: ^4.2.1
+    lodash-es: ^4.2.1
+    loose-envify: ^1.1.0
+    symbol-observable: ^1.0.3
+  checksum: 2/3adb0672320b41c001cd39a7a95627b9d60323f59d01bafa5581db14346fee173a64a4ec5f9e03a8933d780867ec3605cc9fa43752a735fff054a68b595379b3
   languageName: node
   linkType: hard
 
@@ -13155,6 +13193,13 @@ resolve@1.15.0:
   bin:
     svgo: ./bin/svgo
   checksum: 2/e1659738423f625561fa23769d0a010f5ba08e83926ce697491153fa29a8cb2452fa5abb14c1bb489aa186718856f8768d4da870210a79302d47535c57c30d30
+  languageName: node
+  linkType: hard
+
+"symbol-observable@npm:^1.0.3":
+  version: 1.2.0
+  resolution: "symbol-observable@npm:1.2.0"
+  checksum: 2/268834a1d4cba19d40f367e5c2755f612969c8418e43a3be17408e392802a667f8bb542893440d58a080a8ea8da05ea98e27e472b9f4ff6fbda78a21a1a41c53
   languageName: node
   linkType: hard
 

@@ -23,7 +23,7 @@ const minLength = (len) => (val) => (val) && (val.length >= len);
 		);
 	}
 
-	function RenderComments({comments}){
+	function RenderComments({comments, addComment, dishId}){
 
 		if(comments == null){
 			return(
@@ -55,7 +55,7 @@ const minLength = (len) => (val) => (val) && (val.length >= len);
 						{dishComments}
 					</ul>
 					
-					<CommentForm/>	
+					<CommentForm dishId={dishId} addComment={addComment}/>	
 				</div>
 				);
 		}
@@ -81,8 +81,8 @@ const minLength = (len) => (val) => (val) && (val.length >= len);
 		}
 
 		handleSubmit(values){
-	        console.log("Current state is: " + JSON.stringify(values));
-	        alert("Current state is: " + JSON.stringify(values));
+			this.toggleModal();
+			this.props.addComment(this.props.dishId, values.rating, values.author, values.comment);
 	    }
 
 		render(){
@@ -117,7 +117,7 @@ const minLength = (len) => (val) => (val) && (val.length >= len);
 		                            <Row className="form-group">
 		                                <Label htmlFor="name" md={12}>Your Name</Label>
 		                                <Col md={12}>
-		                                    <Control.text model=".name" id="name" name="name"
+		                                    <Control.text model=".author" id="author" name="author"
 		                                        placeholder="Your Name"
 		                                        className="form-control"
 		                                        validators={{
@@ -186,7 +186,10 @@ const minLength = (len) => (val) => (val) && (val.length >= len);
 					</div>
 					<div className="row">
 						<RenderDish dish={props.dish} />
-						<RenderComments comments={props.comments} />	
+						<RenderComments 
+							comments={props.comments}
+							addComment={props.addComment}
+							dishId={props.dish.id} />	
 					</div>
 				</div>
 			);
